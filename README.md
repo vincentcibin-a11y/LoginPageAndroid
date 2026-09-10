@@ -1,81 +1,118 @@
 # LoginPageAndroid
 
-A simple Android login screen built with Java and XML. This project demonstrates basic Android UI design, form input handling, click events, credential validation, and user feedback with Toast messages.
+A clean Android login screen built with **Java, XML, AndroidX, and Material Components**. This project demonstrates Android UI development, form validation, click handling, password input, and user feedback.
 
-## Features
+## ✨ Features
 
-- Username input field
-- Password input field
-- Login button
-- Basic credential validation
-- Success and error feedback using Toast
-- Edge-to-edge window inset handling
+- Clean, centered login UI
+- Username/email input
+- Password input with masking
+- Empty-field validation
+- Demo credential validation
+- Clear success and error feedback
+- Edge-to-edge system-bar handling
+- Java + XML implementation
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Language:** Java
-- **UI:** XML layouts
-- **Build System:** Gradle
-- **IDE:** Android Studio
-- **Minimum SDK:** See `app/build.gradle.kts`
+| Technology | Usage |
+|---|---|
+| Java | Application logic |
+| XML | User interface |
+| Android SDK | Mobile platform |
+| AndroidX | App compatibility and UI support |
+| Material Components | Modern Android UI components |
+| Gradle Kotlin DSL | Build configuration |
 
-## Project Structure
+## 🔐 Demo Credentials
+
+This is an educational project and uses local demo credentials:
+
+| Field | Value |
+|---|---|
+| Username | `admin` |
+| Password | `1234` |
+
+> **Security note:** These credentials are intentionally hard-coded for demonstration. This project does **not** implement production authentication or secure credential storage.
+
+## 📱 Application Flow
+
+1. Enter the username.
+2. Enter the password.
+3. Tap **Login**.
+4. Empty fields are rejected with inline validation.
+5. The demo credentials are checked locally.
+6. A success or error message is shown.
+
+## 📂 Project Structure
 
 ```text
 LoginPageAndroid/
 ├── app/
 │   └── src/
-│       └── main/
-│           ├── java/com/example/loginpage/
-│           │   └── MainActivity.java
-│           └── res/
-│               └── layout/
-│                   └── activity_main.xml
+│       ├── main/
+│       │   ├── java/com/example/loginpage/
+│       │   │   └── MainActivity.java
+│       │   ├── res/
+│       │   │   └── layout/activity_main.xml
+│       │   └── AndroidManifest.xml
+│       ├── test/           # Unit tests
+│       └── androidTest/    # Instrumentation/UI tests
+├── gradle/
 ├── build.gradle.kts
 ├── gradle.properties
 ├── gradlew
 ├── gradlew.bat
-└── settings.gradle.kts
+├── settings.gradle.kts
+└── README.md
 ```
 
-## How to Run
+## 🚀 Getting Started
 
-1. Clone the repository.
-2. Open the project in Android Studio.
-3. Let Gradle sync and finish downloading dependencies.
-4. Connect an Android device or start an emulator.
-5. Run the `app` configuration.
+### Requirements
 
-## Demo Credentials
+- Android Studio
+- Android SDK
+- JDK 11 or the JDK configured by Android Studio
 
-This project uses hard-coded credentials for demonstration purposes only:
+### Run locally
 
-```text
-Username: admin
-Password: 1234
+```bash
+git clone https://github.com/vincentcibin-a11y/LoginPageAndroid.git
+cd LoginPageAndroid
 ```
 
-> **Note:** This is an educational UI/login-validation demo. Hard-coded credentials should not be used in a production authentication system.
+Open the project in Android Studio, allow Gradle sync to complete, then run the `app` configuration on an emulator or Android device.
 
-## What I Practiced
+## 🎯 Learning Objectives
 
-- Designing Android layouts with XML
-- Working with `EditText` and `Button`
+This project was created to practice:
+
+- Building Android layouts with XML
+- Connecting XML views to Java code
 - Handling button click events
-- Reading and validating user input
-- Displaying feedback with `Toast`
-- Handling system-bar insets with AndroidX
+- Reading and validating `EditText` input
+- Password input handling
+- Providing user feedback
+- Working with AndroidX and Material Components
+- Handling system-bar insets
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- Add input validation and error messages directly on the fields
-- Add a loading state
-- Replace hard-coded credentials with a secure authentication backend
-- Add Material Design components and improved accessibility
-- Add automated UI/unit tests
+- Replace hard-coded credentials with secure authentication
+- Add Firebase or REST API authentication
+- Add password visibility toggle
+- Add loading/progress state
+- Add automated UI tests
+- Improve accessibility with Material text fields and clearer error states
+- Add screenshots and an app demo GIF
 
-## Author
+## 👨‍💻 Author
 
 **Cibin Vincent**
 
-GitHub: [@vincentcibin-a11y](https://github.com/vincentcibin-a11y)
+[GitHub Profile](https://github.com/vincentcibin-a11y)
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
