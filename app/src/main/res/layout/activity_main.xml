@@ -30,6 +30,7 @@
             android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
@@ -70,5 +71,5 @@
             android:text="Login"
             android:textAllCaps="false" />
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>
